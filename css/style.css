@@ -1,0 +1,289 @@
+*{
+    box-sizing: border-box;
+    transition: all 1s;
+}
+.home{
+    background-image: url(../images/shutterstock_277750193.jpg);
+    background-size: 100% 100%;
+    height:100%;
+}
+.home .container-fluid{
+    background-color: rgba(0,0,0,0.5);
+    height: 100%
+}
+.home .nav-link{
+    font-size: 18px;
+    font-weight: 600;
+}
+.home .nav-link:hover{
+    color:#28a745!important;
+}
+.home .active>.nav-link{
+    color:#28a745!important;
+}
+.home .caption h1{
+    font-size: 50px;
+}
+.home .caption p{
+    font-size: 20px;
+}
+.booking a.btn{
+    color:#28a745 !important;
+    font-weight: 600;
+}
+.booking a.btn:hover{
+    color:#fff !important;
+    
+}
+.menues{
+    background-color: #ebf6e0;
+    background-size: 100% 100%;
+    padding: 4% 0%;
+
+}
+.menues h3 , .deshes h3{
+    font-size: 40px;
+    
+}
+
+.menues .desh-img{
+    overflow: hidden;
+}
+.menues .desh .caption:hover{
+    background-color: #fff!important;
+}
+.menues .desh .caption div{
+    font-size: 20px;
+    font-weight: 600;
+}
+.menues .desh img:hover{
+    transform: scale(1.03,1.03);
+}
+/* reservation part */
+.reservation{
+    padding-top: 20%;
+    background-image: url(../images/bg.jpg);
+    background-size: 100% 100%;
+    height: 100%;
+    background-attachment: fixed;
+}
+.reservation h3{
+    font-size: 40px;
+        color: #fff;
+padding: 2% 0%;
+}
+.reservation p{
+    font-size: 20px;
+    color: #f8f9fa !important;
+}
+.reservation a.btn{
+    font-weight: 600;
+}
+/*deshes*/
+
+.deshes hr::before{
+    content: "01.";
+    position: absolute;
+    top:7%;
+    right:87%;
+    font-size: 30px;
+    font-weight: 700;
+}
+.deshes .hr2::before{
+    content: "02.";
+    position: absolute;
+    top:7%;
+    right:87%;
+    font-size: 30px;
+    font-weight: 700;
+}
+.deshes a:hover,.update a:hover {
+    cursor: pointer;
+}
+.deshes a:hover i,.update a:hover i{
+    position: relative;
+    right:-2px;
+    color: rgb(40,167,69); 
+    
+}
+.reviewes{
+    background-image:  url("../images/bg.jpg");
+    background-size: 100% 100%;
+    height: 100%;
+}
+.reviewes .title h3,.update .title h3{
+    font-size: 40px;
+    
+}
+
+.reviewes .title p ,.update .title p{
+    font-size: 20px;
+}
+.reviewes h4:hover{
+    color: rgb(40,167,69);
+    cursor: pointer;
+}
+.carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(255,255,255,.5);
+    top:90px;
+}
+.carousel-indicators .active{
+    background-color: rgb(40,167,69);
+}
+.update .card:hover .card-body{
+    background-color: #fff !important;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+}
+.last {
+    background-color: #ebf6e0;
+}
+footer{
+    background-color:rgba(30,167,60,.2);
+}
+footer i{
+    padding: 0px 3px;
+}
+footer i:hover{
+    color:rgb(40,167,69);
+    cursor: pointer;
+}
+
+/*  start media for all screen*/
+@media only screen and (max-width:667px){
+   .wrapper{
+    display: flex;
+    flex-direction: column;
+    }
+    .wrapper>div:nth-last-child(2){
+        order:1;
+    }
+    
+    .wrapper div:first-child.mx-5{
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+    .menues .container> h3{
+        text-align: center ;
+    }
+    .menues .container> p{
+        margin: auto;
+        text-align: center ;
+        width: 90% !important;
+    }
+    .menues .desh{
+        margin: auto;
+        width: 88%;
+    }
+    .home nav.navbar{
+        width: 100%!important;
+    }
+    .home .caption div.mt-5,.home .caption p.mt{
+        
+        margin-top: 0px !important;
+    }
+    .home .caption div.pt-5,.home .caption p.pt{
+        
+        padding-top: 0px !important;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    footer div{
+        flex-flow: column;
+    }
+    footer.px-5{
+        padding-left: 15px !important;
+        padding-right: 0px !important;
+    }
+    .reviewes{
+        display: none;
+    }
+    .update {
+        background-color: rgba(250,250,250,0.7);
+    }
+}
+
+
+
+@media only screen and (max-width: 966px){
+    .home .caption div.mt-5,.home .caption p.mt{
+        
+        margin-top: 0px !important;
+    }
+    .home .caption div.pt-5,.home .caption p.pt{
+        
+        padding-top: 0px !important;
+    }
+    
+    .deshes hr::before{
+    content: "01.";
+    position: absolute;
+    top:8% !important;
+    right:89% !important;
+    font-size: 30px;
+    font-weight: 700;
+}
+    .deshes .hr2::before{
+        content: "02.";
+        position: absolute;
+        top:8% !important;
+        right:89%!important;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+    .wrapper>div:nth-last-child(2){
+        order:1;
+    }
+    
+    .wrapper div:first-child.mx-5{
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+    .menues .container> h3{
+        text-align: center ;
+    }
+    .menues .container> p{
+        margin: auto;
+        text-align: center ;
+        width: 90% !important;
+    }
+   
+    
+}
+
+
+
+@media only screen and (max-width: 1280px){
+    .deshes .wrapper .p-img{
+    
+    padding-top: 150px;
+}
+    
+        
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    footer div{
+        flex-flow: column;
+        font-size: 18px;
+    }
+    footer.px-5{
+        padding-left: 15px !important;
+        padding-right: 0px !important;
+    }
+    
+}
